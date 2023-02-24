@@ -15,9 +15,7 @@ const images = [
 
 
 const imagesList = document.querySelector(".gallery");
-const markup = images.map((image) => `<li><img class="image" src=${image.url}></li>`).join("");
-
+const markup = images.map((image) => `<li><img class="image" display ="flex" flex-direction = "colum" width = "300px" src=${image.url}></li>`).join("");
 imagesList.insertAdjacentHTML("afterbegin", markup);
 imagesList.innerHTML = markup;
 
-console.log(markup);
